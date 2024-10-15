@@ -46,7 +46,7 @@ class _DuitScreenState extends State<DuitScreen> {
   @override
   void initState() {
     _driver = DuitDriver(
-      "/c_demo",
+      widget.path,
       eventHandler: _Handler(),
       transportOptions: HttpTransportOptions(
         baseUrl: "http://localhost:8999",
